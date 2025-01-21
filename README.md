@@ -4,7 +4,34 @@ This project focuses on executing basic SQL queries on the Airbnb Listings datas
 
 # Steps:
 
-# 1 TableCreation & #DataInsertion 🛠️
+# 1 TableCreation & DataInsertion 🛠️
 - Created the airbnb_listings table with essential columns:
 - Inserted sample data for cities such as Paris, Tokyo, New York, and others.
+
+# 2 BasicSQLQueries 💻
+- FetchingAllData:
+- FilteringListingsByRooms:
+- SortingDataByRooms:
+- CitySpecificFilters:
+- AggregatingData:
+- AverageRoomsPerListing:
+- ConditionalFilteringWithANDorOR:
+
+# 3 AdvancedQueryTechniques 🔍
+- GroupingData
+- FilteringGroupedData:
+- SortingWithAggregatedResults:
+
+
+
+
+
+
+
+
+
+
+
+
+
 
