@@ -1,22 +1,42 @@
-#Project Description: Basic SQL Queries - Airbnb Listings 🏡
+#BasicSQLQueries - #AirbnbListings 🏡
+This project focuses on executing basic SQL queries on the Airbnb Listings dataset to extract valuable insights. Below is a breakdown of the steps followed in this project:
 
-##In this project, I have implemented and executed a series of basic SQL queries to analyze the Airbnb Listings dataset. Below are the steps I followed to explore and gain insights from the dataset:
-
-Steps:
-- 1. Table Creation & Data Insertion 🛠️
-Created the airbnb_listings table with columns like id, city, country, number_of_rooms, and year_listed.
-Inserted sample data for cities like Paris, Tokyo, New York, Sydney, etc.
-- 2. Basic SQL Queries 💻
-Get all data from the table: SELECT * FROM airbnb_listings;
-Filter listings by number of rooms: Used WHERE clause to filter listings with specific room counts, such as number_of_rooms > 3.
-Sort data by number of rooms: Applied ORDER BY to sort listings based on room numbers, in ascending or descending order.
-Get data for specific cities: Used LIKE and IN to filter listings from cities like Paris or Tokyo.
-Aggregate data: Calculated the total number of rooms across all listings using SUM(number_of_rooms).
-Average rooms per listing: Used AVG(number_of_rooms) to find the average number of rooms across listings.
-Group and filter data: Grouped listings by country and applied HAVING clause to filter countries based on average room count.
-- 3. Advanced Querying Techniques 🔍
-Conditional queries with AND/OR: Combined multiple conditions using logical operators to filter data efficiently.
-Data analysis by grouping: Grouped listings by country and applied aggregate functions like AVG and SUM.
-- 4. Final Output & Conclusion 📊
-Successfully derived useful insights from the dataset, including room availability, average room counts per country, and more.
-Ready to use for further analysis or presentation.
+#Steps:
+#1 TableCreation & #DataInsertion 🛠️
+Created the airbnb_listings table with essential columns:
+id, city, country, number_of_rooms, and year_listed.
+Inserted sample data for cities such as Paris, Tokyo, New York, and others.
+#2 BasicSQLQueries 💻
+FetchingAllData:
+SELECT * FROM airbnb_listings;
+FilteringListingsByRooms:
+Applied WHERE clause for specific room counts:
+WHERE number_of_rooms > 3;
+SortingDataByRooms:
+Used ORDER BY to sort the listings in ascending/descending order:
+ORDER BY number_of_rooms DESC;
+CitySpecificFilters:
+Filtered listings from cities like Paris using LIKE or IN:
+WHERE city = 'Paris';
+AggregatingData:
+Calculated total rooms using SUM(number_of_rooms):
+SELECT SUM(number_of_rooms) FROM airbnb_listings;
+AverageRoomsPerListing:
+Used AVG(number_of_rooms) to get the average room count:
+SELECT AVG(number_of_rooms) FROM airbnb_listings;
+ConditionalFilteringWithANDorOR:
+Combined multiple conditions to filter listings effectively:
+WHERE city = 'Paris' AND number_of_rooms > 3;
+#3 AdvancedQueryTechniques 🔍
+GroupingData:
+Used GROUP BY to aggregate data by countries and cities:
+GROUP BY country;
+FilteringGroupedData:
+Applied HAVING to filter groups based on conditions:
+HAVING AVG(number_of_rooms) > 3;
+SortingWithAggregatedResults:
+Sorted results of group-based queries:
+ORDER BY AVG(number_of_rooms) ASC;
+#4 FinalInsights & #Output 📊
+Gained valuable insights into room availability and country-wise trends.
+Prepared the dataset for further analysis or visualization.
