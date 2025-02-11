@@ -226,7 +226,6 @@ HAVING AVG(number_of_rooms) >= 4;
 ```
 # 4 FinalInsights & Output 📊
 - Gained valuable insights into room availability and country-wise trends.
-- Prepared the dataset for further analysis or visualization.
 
 
 
